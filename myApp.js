@@ -1,11 +1,13 @@
 const express = require("express");
 
+
 const app = express();
 const bGround = require("fcc-express-bground");
 
+bGround.log("Hello World");
 
   app.get("/",  (req, res) => {
-    bGround.log("Hello World");
+    res.send("Hello World");
   });
 
 
